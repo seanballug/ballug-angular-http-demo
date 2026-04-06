@@ -1,0 +1,16 @@
+<div>
+  <h2>Users — JSONPlaceholder API</h2>
+
+  @if (users()) {
+    @for (user of users()!; track user.id) {
+      <div>
+        <h3>{{ user.name }}</h3>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Phone:</strong> {{ user.phone }}</p>
+      </div>
+    }
+  } @else {
+    <p>Loading users from API...</p>
+  }
+</div>

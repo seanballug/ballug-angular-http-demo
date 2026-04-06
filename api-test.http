@@ -1,0 +1,18 @@
+### GET all users
+GET https://jsonplaceholder.typicode.com/users
+
+### GET a single user
+GET https://jsonplaceholder.typicode.com/users/3
+
+### POST
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "Angular 22 HTTP Lab",
+  "body": "Exploring HTTP Client and APIs",
+  "userId": 1
+}
+
+### DELETE
+DELETE https://jsonplaceholder.typicode.com/posts/1
